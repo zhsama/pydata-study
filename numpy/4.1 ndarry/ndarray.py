@@ -61,3 +61,59 @@ import numpy as np
 # max = (a > b and [a] or [b])[0] #list
 # max = (a > b and a or b)
 
+
+# 基本的索引和切片基本的索引和切片
+# arr = np.arange(10)  # 类似range 返回数组对象
+# print(arr)
+# print(arr[0])
+# print(arr[0:3])
+# arr[5:8] = 12
+# print(arr)
+# arrc_copy = arr[5:8]
+# arrc_copy[-1] = 0
+# print(arrc_copy)
+# print(arr)
+
+# 复制数组
+# arr_copy = arr[5:8].copy()
+# print(arr_copy)
+# arr_copy[-1] = 0
+# print(arr_copy)
+# print(arr)
+
+# 二维数组
+# arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+# print(arr2d[0][0])
+# print(arr2d[0, 0])
+
+# 三维数组
+# arr3d = np.array([
+#     [
+#         [1, 2, 3],
+#         [4, 5, 6]
+#     ],
+#     [
+#         [7, 8, 9],
+#         [10, 11, 12]
+#     ]
+# ])
+# print(arr3d)
+# print(arr3d[0])
+# print(arr3d[0, 0])
+# print(arr3d[0, 0, 0])
+# arr = arr3d[0].copy()
+# arr3d[1] = arr
+# print(arr3d)
+
+# 布尔型索引
+# names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'])
+# data = np.random.randn(7, 4)
+# print(names)
+# print(data)
+# print(names == 'Bob')
+# print(data[names == 'Bob'])
+# 布尔型数组的长度必须跟被索引的轴长度一致
+# ~取反
+# print(~(names == 'Bob'))
+# print(data[~(names == 'Bob'), 3])
+
