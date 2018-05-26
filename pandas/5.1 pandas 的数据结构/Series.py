@@ -33,8 +33,8 @@ obj4 = pd.Series(data=sdata, index=states)
 # print(obj3 + obj4)
 
 # Series 对象本身及其索引都有一个 name 属性
-obj4.name = 'population'
-obj4.index.name = 'state'
+# obj4.name = 'population'
+# obj4.index.name = 'state'
 # print(obj4)
 
 # Series 的索引可以通过赋值的方式就地修改
