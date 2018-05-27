@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 obj = pd.Series(range(3), index=['1', '2', '3'])
 index = obj.index
-# print(index)
+print(index)
 # print(index[1])
 # print(index[1:])
 
