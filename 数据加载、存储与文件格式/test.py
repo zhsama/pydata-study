@@ -26,8 +26,17 @@ import matplotlib.pyplot as plt
 # })
 # print(frame)
 # frame.to_csv('test.csv', sep=',')
-# df = pd.read_csv('tesst.csv', sep=',')
+# df = pd.read_csv('test.csv', sep=',')
+
+# 自动分配列索引
+# df = pd.read_csv('test.csv', header=None)
 # print(df)
-names = ['a', 'b', 'c', 'd', 'message']
-df = pd.read_csv('tesst.csv', names=names, index_col='message')
-print(df)
+# names = ['a', 'b', 'c', 'd', 'message']
+# df = pd.read_csv('tesst.csv', names=names, index_col='message')
+# print(df)
+
+# 指定某数据作为索引
+# names = ['a', 'b', 'c', 'd', 'message']
+# df = pd.read_csv('test.csv', names=names, index_col='message')
+# print(df)
+
