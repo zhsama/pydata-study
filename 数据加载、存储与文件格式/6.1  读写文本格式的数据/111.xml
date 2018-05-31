@@ -1,0 +1,63 @@
+<Siri xmlns:ns2="http://www.ifopt.org.uk/acsb" xmlns="http://www.siri.org.uk/siri"
+      xmlns:ns4="http://datex2.eu/schema/1_0/1_0" xmlns:ns3="http://www.ifopt.org.uk/ifopt">
+    <ServiceDelivery>
+        <ResponseTimestamp>2018-05-31T05:37:03.0493049-04:00</ResponseTimestamp>
+        <SituationExchangeDelivery>
+            <ResponseTimestamp>2018-05-31T05:37:03.0493049-04:00</ResponseTimestamp>
+            <Status>true</Status>
+            <Situations>
+                <PtSituationElement>
+                    <CreationTime>2018-05-31T04:16:25.41-04:00</CreationTime>
+                    <SituationNumber>MTA NYCT_7d023f91-e5c7-4003-b3db-8b42ebdbbacc</SituationNumber>
+                    <PublicationWindow>
+                        <StartTime>2018-05-30T17:48:00-04:00</StartTime>
+                    </PublicationWindow>
+                    <Summary xml:lang="EN">
+                        [D] and [F] trains are running with delays in both directions because of signal problems at 34
+                        St-Herald Sq.
+                    </Summary>
+                    <Description xml:lang="EN">
+                        [D] and [F] trains are running with delays in both directions because of signal problems at 34
+                        St-Herald Sq.
+                    </Description>
+                    <LongDescription>
+                        [D] and [F] trains are running with delays in both directions because of signal problems
+                        at <STRONG>34 St-Herald Sq</STRONG>.
+                    </LongDescription>
+                    <Planned>false</Planned>
+                    <ReasonName>Delays</ReasonName>
+                    <MessagePriority>2</MessagePriority>
+                    <Source>
+                        <SourceType>directReport</SourceType>
+                    </Source>
+                    <Affects>
+                        <VehicleJourneys>
+                            <AffectedVehicleJourney>
+                                <LineRef>MTA NYCT_D</LineRef>
+                                <DirectionRef>1</DirectionRef>
+                            </AffectedVehicleJourney>
+                            <AffectedVehicleJourney>
+                                <LineRef>MTA NYCT_D</LineRef>
+                                <DirectionRef>0</DirectionRef>
+                            </AffectedVehicleJourney>
+                            <AffectedVehicleJourney>
+                                <LineRef>MTA NYCT_F</LineRef>
+                                <DirectionRef>0</DirectionRef>
+                            </AffectedVehicleJourney>
+                            <AffectedVehicleJourney>
+                                <LineRef>MTA NYCT_F</LineRef>
+                                <DirectionRef>1</DirectionRef>
+                            </AffectedVehicleJourney>
+                        </VehicleJourneys>
+                    </Affects>
+                    <Consequences>
+                        <Consequence>
+                            <Condition>delayed</Condition>
+                            <Severity>undefined</Severity>
+                        </Consequence>
+                    </Consequences>
+                </PtSituationElement>
+            </Situations>
+        </SituationExchangeDelivery>
+    </ServiceDelivery>
+</Siri>
