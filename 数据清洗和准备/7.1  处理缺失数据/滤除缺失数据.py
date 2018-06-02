@@ -16,4 +16,16 @@ data = pd.Series([1, na, 3.5, na, 7])
 # dataframe
 data = pd.DataFrame([[1., 6.5, 3.], [1., na, na], [na, na, na], [na, 6.5, 3.]])
 # print(data)
-print(data.dropna())
+# print(data.dropna())
+
+# 丢弃全为nan的行（列）
+# print(data.dropna(how='all'))
+# print(data.dropna(how='all', axis=1))
+
+frame = pd.DataFrame(np.random.randn(7, 3))
+frame.iloc[:4, 1] = na
+frame.iloc[:2, 2] = na
+frame.iloc[-1] = na
+# print(frame)
+# print(frame.dropna(thresh=2))
+# print(frame.dropna(how='all'))
