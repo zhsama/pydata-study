@@ -13,4 +13,10 @@ frame = pd.DataFrame(np.random.randn(1000, 4))
 # print(frame.describe()) # 自动统计
 # col = frame['2']
 # print(col)
+
 print(frame[2][np.abs(frame[2]) > 3])
+# frame中所有绝对值大于三的数
+print(frame[(np.abs(frame) > 3).any(1)])
+
+frame[np.abs(frame) > 3] = np.sign(frame) * 3
+print(frame.describe())
