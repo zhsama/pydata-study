@@ -40,7 +40,9 @@ righth = pd.DataFrame(
 # 两个dataframe索引均作为连接键
 left2 = pd.DataFrame(
     [
-        [1., 2.], [3., 4.], [5., 6.]
+        [1., 2.],
+        [3., 4.],
+        [5., 6.]
     ],
     index=['a', 'c', 'e'],
     columns=['Ohio', 'Nevada']
@@ -56,15 +58,19 @@ right2 = pd.DataFrame(
 # print(pd.merge(left1, right1, left_index=True, right_index=True, how='outer'))
 
 # jion方法
-print(left2.join(right2, how='outer'))
-print(left1.join(right1, on='key'))
+# print(left2.join(right2, how='outer'))
+# print(left1.join(right1, on='key'))
 # 传入dataframe对象直接按索引合并
 another = pd.DataFrame(
     [
-        [7., 8.], [9., 10.], [11., 12.], [16., 17.]
+        [7., 8.],
+        [9., 10.],
+        [11., 12.],
+        [16., 17.]
     ],
     index=['a', 'c', 'e', 'f'],
-    columns=['New  York', 'Oregon']
+    columns=['New York', 'Oregon']
 )
-print(left2.join([right2, another]))
-print(left2.join([right2, another], how='outer'))
+# print(another)
+# print(left2.join([right2, another]))
+# print(left2.join([right2, another], how='outer'))

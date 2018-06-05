@@ -23,9 +23,9 @@ df2 = pd.DataFrame({
 # 键名不同 分别制定键名
 df3 = pd.DataFrame({'lkey': ['b', 'b', 'a', 'c', 'a', 'a', 'b'], 'data1': range(7)})
 df4 = pd.DataFrame({'rkey': ['a', 'b', 'd'], 'data2': range(3)})
-# print(df3)
-# print(df4)
-# print(pd.merge(df3, df4, left_on='lkey', right_on='rkey'))
+print(df3)
+print(df4)
+print(pd.merge(df3, df4, left_on='lkey', right_on='rkey'))
 
 # 外连接
 # print(pd.merge(df1, df2, how='outer'))
@@ -49,5 +49,5 @@ right = pd.DataFrame({
 })
 # print(pd.merge(left, right, on=['key1', 'key2'], how='inner'))
 
-print(pd.merge(left, right, on='key1'))
-print(pd.merge(left, right, on='key1', suffixes=('_left', '_right')))
+# print(pd.merge(left, right, on='key1'))
+# print(pd.merge(left, right, on='key1', suffixes=('_left', '_right')))
