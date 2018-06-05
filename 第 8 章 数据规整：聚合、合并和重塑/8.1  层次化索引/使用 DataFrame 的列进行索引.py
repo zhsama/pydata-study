@@ -24,7 +24,7 @@ print(frame2)
 # print(frame2.sort_index(level=1))
 
 # 保留被设为levels的列索引
-print(frame.set_index(['c', 'd'], drop=False))
+# print(frame.set_index(['c', 'd'], drop=False))
 
 # reset_index()
 print(frame2.reset_index())
