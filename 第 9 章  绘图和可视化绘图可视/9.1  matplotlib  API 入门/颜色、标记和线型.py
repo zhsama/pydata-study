@@ -12,10 +12,10 @@ import matplotlib.pyplot as plt
 # plt.axes.plot(x, y, linestyle='--', color='g')
 # plt.plot(np.random.randn(30).cumsum(), 'ko--')
 # plt.plot(np.random.randn(30).cumsum(),  color='k',  linestyle='dashed', marker= 'o')
-# plt.show()
-
-data = np.random.randn(30).cumsum()
-plt.plot(data, 'k--', label='Default')
-plt.plot(data, 'k-', drawstyle='steps-post', label='steps-post')
-plt.legend(loc='best')
 plt.show()
+#
+# data = np.random.randn(30).cumsum()
+# plt.plot(data, 'k--', label='Default')
+# plt.plot(data, 'k-', drawstyle='steps-post', label='steps-post')
+# plt.legend(loc='best', labels='Defualt')
+# plt.show()
