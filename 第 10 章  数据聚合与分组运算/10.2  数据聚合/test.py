@@ -1,8 +1,8 @@
 # @Version : Python3.6
-# @Time    : 2018/6/8 21:03
+# @Time    : 2018/6/9 16:11
 # @Author  : zhcf1ess
 # @Site    : 
-# @File    : 选取一列或列的子集.py
+# @File    : test.py
 # @Software: PyCharm
 import pandas as pd
 import numpy as np
@@ -15,8 +15,11 @@ df = pd.DataFrame(
         'data2': np.random.randn(5)
     }
 )
-# print(df.groupby('key1')['data1'].size())
-# print(df['data1'].groupby(df['key1']).size())
+grouped = df.groupby('key1')
 
-# print(df.groupby(['key1','key2'])['data1'].mean())
-print(df['data1'].groupby([df['key1'], df['key2']]).mean())
+
+# print(grouped['data1'].quantile(0.9))
+
+def peak_to_peak(arr):
+    return arr.max() - arr.min()
+print(grouped.agg(peak_to_peak))
