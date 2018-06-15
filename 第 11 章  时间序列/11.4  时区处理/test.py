@@ -7,5 +7,5 @@
 import pytz
 
 # print(pytz.common_timezones[-5:])
-tz = pytz.timezone('America/New_York')
-print(tz)
+# tz = pytz.timezone('America/New_York')
+# print(tz)
