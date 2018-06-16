@@ -14,9 +14,10 @@ frame = pd.DataFrame(np.random.randn(24, 4),
 # print(frame[:5])
 
 annual_frame = frame.resample('A-DEC').mean()
-print(annual_frame)
+# print(annual_frame)
 
 # 升采样
-print(annual_frame.resample('Q-DEC').ffill())
+# print(annual_frame.resample('Q-DEC').ffill())
 print(annual_frame.resample('Q-DEC', convention='end').ffill())
-print(annual_frame.resample('Q-MAR').ffill())
+print(annual_frame.resample('Q-DEC', convention='start').ffill())
+# print(annual_frame.resample('Q-MAR').ffill())
