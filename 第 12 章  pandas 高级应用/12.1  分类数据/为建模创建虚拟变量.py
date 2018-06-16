@@ -7,3 +7,6 @@
 import pandas as pd
 import numpy as np
 
+cat_s = pd.Series(['a', 'b', 'c', 'd'] * 2, dtype='category')
+print(pd.get_dummies(cat_s))
+print(cat_s)
