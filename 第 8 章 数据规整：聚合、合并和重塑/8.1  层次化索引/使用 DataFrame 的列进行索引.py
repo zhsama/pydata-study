@@ -14,7 +14,7 @@ frame = pd.DataFrame(
         'd': [0, 1, 2, 0, 1, 2, 3]
     }
 )
-# print(frame)
+print(frame)
 frame2 = frame.set_index(['c', 'd'])
 print(frame2)
 # print(frame2.index)
