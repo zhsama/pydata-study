@@ -48,20 +48,35 @@ by_tz_os = cframe.groupby(['tz', 'os'])
 agg_counts = by_tz_os.size().unstack().fillna(0)  # 重塑DataFrame 行列互换 清除na
 # print(agg_counts[:10])
 
-# 构造简介索引数组
+# 对os字段权重重排序
 indexer = agg_counts.sum(1).argsort()  # 根据索引和值排序
 # print(indexer[:10])
-
-#
 count_subset = agg_counts.take(indexer[-10:])  # 截取最后10行最大值
 # print(count_subset)
 # count_subset = agg_counts.sum(1).nlargest(10)  # sum(1)根据行求值 nlargest(10)降序排列 获取前十个数
 
-# 绘图
+# 重组数据
 count_subset = count_subset.stack()
 # print(count_subset)
 count_subset.name = 'total'
 count_subset = count_subset.reset_index()
-print(count_subset[:10])
+# print(count_subset[:10])
+
+
+# 数据百分比化
+def norm_total(group):
+    group['normed_total'] = group.total / group.total.sum()
+    return group
+
+
+results = count_subset.groupby('tz').apply(norm_total)
+# print(results)
+
+# 用 groupby 的 transform 方法，更高效的计算标准化的和
+# g = count_subset.groupby('tz')
+# results2 = count_subset.total / g.total.transform('sum')
+
+# 绘图
 # sns.barplot(x='total', y='tz', hue='os', data=count_subset)
+# sns.barplot(x='normed_total', y='tz', hue='os', data=results)
 # plt.show()
