@@ -1,0 +1,48 @@
+# ---rb模式（以二进制的模式读取）--
+# 注意点： 带有b的模式都是二进制的的模式，在这种模式下，不管什么系统都不要添加encodeing参数
+f = open('./1.txt','rb')
+# 读取数据
+content = f.read() # 读取文件中的所有数据
+print(content,type(content))
+
+# 对二进制数据进行utf-8的解码操作， 将bytes类型数据转化成str，就是解码操作
+result  = content.decode('utf-8')
+print(result)
+
+# 拓展 将str类型数据转化成bytes ,编码
+print(result.encode('utf-8'))
+
+# 关闭
+f.close()
+# ---rb模式（以二进制的模式读取）--
+# 注意点： 带有b的模式都是二进制的的模式，在这种模式下，不管什么系统都不要添加encodeing参数
+f = open('./1.txt','rb')
+# 读取数据
+content = f.read() # 读取文件中的所有数据
+print(content,type(content))
+
+# 对二进制数据进行utf-8的解码操作， 将bytes类型数据转化成str，就是解码操作
+result  = content.decode('utf-8')
+print(result)
+
+# 拓展 将str类型数据转化成bytes ,编码
+print(result.encode('utf-8'))
+
+# 关闭
+f.close()
+# ---rb模式（以二进制的模式读取）--
+# 注意点： 带有b的模式都是二进制的的模式，在这种模式下，不管什么系统都不要添加encodeing参数
+f = open('./1.txt','rb')
+# 读取数据
+content = f.read() # 读取文件中的所有数据
+print(content,type(content))
+
+# 对二进制数据进行utf-8的解码操作， 将bytes类型数据转化成str，就是解码操作
+result  = content.decode('utf-8')
+print(result)
+
+# 拓展 将str类型数据转化成bytes ,编码
+print(result.encode('utf-8'))
+
+# 关闭
+f.close()

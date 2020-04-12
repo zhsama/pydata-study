@@ -1,2 +1,11 @@
 # pydata-study
-### 弱鸡的利用python进行数据分析(第二版)的学习笔记(非ipython)
+<li>数据科学学习笔记
+    <ul>Excel</ul>
+    <ul>Mysql</ul>
+    <ul>Spark</ul>
+    <ul>Numpy</ul>
+    <ul>Pandas</ul>
+    <ul>Hadoop</ul>
+    <ul>机器学习</ul>
+    <ul>深度学习</ul>
+</li> 
